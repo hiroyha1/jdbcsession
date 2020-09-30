@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <form th:action="@{/add}" method="post">
+                <input type="text" name="message" />
+                <br>
+                <input type="submit" value="Save" />
+            </form>
+        </div>
+        <div>
+            <p th:text="${message}"></p>
+        </div>
+    </body>
+</html>
